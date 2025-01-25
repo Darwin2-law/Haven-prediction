@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Odds Haven</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="profile.html" class="active"><i class="fas fa-user-circle"></i> Profile</a></li>
+            <li><a href="help.html"><i class="fas fa-question-circle"></i> Help</a></li>
+            <li><a href="logout.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>User Profile</h2>
+
+        <!-- Profile Information Form -->
+        <div class="profile-info">
+            <h3><i class="fas fa-id-badge"></i> Personal Information</h3>
+            <form id="profile-form">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <button type="submit">Save Changes</button>
+            </form>
+        </div>
+
+        <!-- Displaying Profile Details -->
+        <div class="display-profile">
+            <h3><i class="fas fa-id-badge"></i> Your Profile Information</h3>
+            <p><strong>Name:</strong> <span id="display-name">Not Provided</span></p>
+            <p><strong>Email:</strong> <span id="display-email">Not Provided</span></p>
+        </div>
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>
